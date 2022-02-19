@@ -84,8 +84,5 @@ function! s:error(msg)
 	let v:errmsg = a:msg
 endfunction
 
-command! -bang -complete=buffer -nargs=? Bdelete
-	\ :call s:bdelete("bdelete", <q-bang>, <q-args>)
-
 command! -bang -complete=buffer -nargs=? Bwipeout
 	\ :call s:bdelete("bwipeout", <q-bang>, <q-args>)
